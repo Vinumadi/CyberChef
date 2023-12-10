@@ -1,0 +1,141 @@
+Received: from CWLP123MB5842.GBRP457.PROD.OUTLOOK.COM (2603:10a6:400:1e::5)
+ by LO4P123MB5011.GBRP457.PROD.OUTLOOK.COM with HTTPS; Thu, 17 Aug 2023
+ 14:03:54 +0000
+Received: from AS4P191CS0004.EURP11.PROD.OUTLOOK.COM (2603:10a6:20b:55::10)
+ by CWLP123MB5842.GBRP457.PROD.OUTLOOK.COM (2603:10a6:400:15::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6699.15; Thu, 17 Aug
+ 2023 14:03:53 +0000
+Received: from AP4PEPF00023A60.eurpd4.pro.outlook.com
+ (2603:10a6:20b:5d5:cae::b9) by AS4P191CA0004.outlook.office365.com
+ (2603:10a6:20b:5d5::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6652.33 via Frontend
+ Transport; Thu, 17 Aug 2023 14:03:53 +0000
+Authentication-Results: spf=pass (sender IP is 198.54.127.74)
+ smtp.mailfrom=xyz.co.com; dkim=pass (signature was verified)
+ header.d=xyz.co.com;dmarc=pass action=none
+ header.from=xyz.co.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of xyz.co.com
+ designates 198.54.127.74 as permitted sender)
+ receiver=protection.outlook.com; client-ip=198.54.127.74;
+ helo=mailout-pe-a.jellyfish.systems; pr=C
+Received: from mailout-pe-a.jellyfish.systems (198.54.127.74) by
+ AM4PEPF00027A60.mail.protection.outlook.com (10.1.1.8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.6699.15 via Frontend Transport; Thu, 17 Aug 2023 14:03:52 +0000
+Received: from output-router-84cf8f76b8-5xbld (unknown [10.3.5.4])
+	by mailout-pe-a.jellyfish.systems (Postfix) with ESMTPA id 4RRRYt6GKqz3xd0
+	for <abc@uk.xyz.com>; Thu, 17 Aug 2023 14:03:46 +0000 (UTC)
+Received: from MTA-10.privateemail.com (unknown [10.5.4.20])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange X25519 server-signature RSA-PSS (2048 bits))
+	(No client certificate requested)
+	by NEW-01-3.privateemail.com (Postfix) with ESMTPS id B982E100588E
+	for <abc@uk.xyz.com>; Thu, 17 Aug 2023 10:03:46 -0400 (EDT)
+Received: from mta-10.privateemail.com (localhost [127.0.0.1])
+	by mta-10.privateemail.com (Postfix) with ESMTP id 8C94618000B7
+	for <abc@uk.xyz.com>; Thu, 17 Aug 2023 10:03:46 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=xyz.co.com;
+	s=default; t=1692281026;
+	bh=+Ww/O1W000iYSn2Qq1Agkxg+bjnGSQR1xHQ9ECv5oAE=;
+	h=Date:Subject:To:From:From;
+	b=CN+Zn4+7mdDtDjiNqPm7QhHc9g7W4SX1YTqZQ82+6oXum4IAq9BzEDN/tU9l12H5l
+	 ZSe+WqtU6s8uftIcbbUVmHgZiCc5UhrqP0hhDCOREh8jiTSB4529GgT9NnEe4d0JTM
+	 HVM2sYGkgmiXJlqJg0Clevx6UWN9uiyQ3ZbJgMVK11Me/tJ0Yd/1oveOTVP3K3XRCK
+	 JM3sLCU4O0YTBJAr1Gw8RZCKvBMs2vMnUGcCN3lg771b0JQvnFhRVxwHyl0CtpU42n
+	 PHZE4d6aT5UcYCXR+iz21BT8RqXrZ30Rxrj0OKxv3sygD84/wYpIwEE7c6TffkU8+I
+	 SSJea36eBeQ+g==
+Received: from go01-prelic (unknown [20.108.1.19])
+	by mta-10.privateemail.com (Postfix) with ESMTPA
+	for mail id Thu, 17 Aug 2023 10:03:44 -0400 (EDT)
+Mime-Version: 1.0
+Date: Thu, 17 Aug 2023 14:03:46 +0000
+X-Mailer: IGNORE
+X-KB4TOKEN: B7AE7E6ED6A2E6F1B647F15A2FCAF526
+Message-Id: <1692281024814801610.1941937.4437548596758551339@go01-prelic>
+Subject: Introducing Perkbox: Exciting Employee Benefits!
+To: abc@uk.xyz.com
+From: "Perkbox" <perkbox@xyz.co.com>
+Content-Type: multipart/related;
+ boundary=02901e59dd4ee72c30016c0be45744275039d96315df0ddfe865a614a9c4
+X-Virus-Scanned: ClamAV using ClamSMTP
+Return-Path: perkbox@xyz.co.com
+X-MS-Exchange-Organization-ExpirationStartTime: 17 Aug 2023 14:03:52.8388
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ fc25673e-31cf-4bef-11ce-08db9f2ac9ef
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 19bd8110-57df-4657-b572-7092bb967a07:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ AM4PEPF00027A60:EE_|CWLP123MB5842:EE_|LO4P123MB5011:EE_
+X-MS-Exchange-Organization-AuthSource:
+ AP4PEPF00023A60.eurpd4.pro.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: fc25673e-31cf-4bef-11ce-08db9f2ac9ef
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;
+X-Forefront-Antispam-Report:
+ CIP:198.54.127.74;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mailout-pe-a.jellyfish.systems;PTR:mailout-pe-a.jellyfish.systems;CAT:NONE;SFS:;DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 17 Aug 2023 14:03:52.4794
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: fc25673e-31cf-4bef-11ce-08db9f2ac9ef
+X-MS-Exchange-CrossTenant-Id: 19bd8110-57df-4657-b572-7092bb967a07
+X-MS-Exchange-CrossTenant-AuthSource:
+ AP4PEPF00023A60.eurpd4.pro.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CWLP123MB5842
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.1896683
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.6699.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?Af/CNT483URNe2hK/qCLgXqkrrdcJwZrXkbAlsvCowkGAO08kbgejrmQkOHn?=
+ =?us-ascii?Q?Bm4cRxupuyM0Ix/Su4McjwoE8KPzZQHDCLcAUvhp6g1TCmK6KAQPH8wXJYqB?=
+ =?us-ascii?Q?vr8LBcYj/CnuLo+uayYgVGBIy1/ahD6EY5N8NHJRz2Ksbqd19i94u0I1MX97?=
+ =?us-ascii?Q?x+KLlcNp5JPinTp63nk+/uNf+UYQE17hS6a+vKKWEAuMbUcMuWrAD61rWjBA?=
+ =?us-ascii?Q?6TrwukFbxI4qxVpfp9DTehcXWkayD6j5ARiZsRk5Ls9pKLtBhHGshkSZhoyX?=
+ =?us-ascii?Q?UXfpd0NBqua9g2U3uBK03ZpP+dDDBpmZW7wF2kXjuNiUg8p34HPkxyXpwcJh?=
+ =?us-ascii?Q?H2ZvZNpWMEZbMf5qmmyCVUiR6Mg3it+q8e8MiC9eyLmbZZUHGfghQd5PU208?=
+ =?us-ascii?Q?5DG+iPgipk5b+K22/a+Kv+elg55PvlWlIhyynnUEhUXwIDHjhlgVlNuVnPZe?=
+ =?us-ascii?Q?78Z2mIaQMUsa7m0Uv4A37X2CfNng6Va6M70RKCiF//SrlKWZen9P2lheh5Hw?=
+ =?us-ascii?Q?UlBpnNlt+1FFmGuxLJCN9UB2+eVS5+dcRJ/uyA6Lb5QNhfONGDulQNxn6xD8?=
+ =?us-ascii?Q?PHCBYsDs6lllUGFI5TYCoygmrZIcLUvODw0lyWL7nymn2mfmxmsNVndUfRqJ?=
+ =?us-ascii?Q?BTu/EK/JZsL1N2uYiB0p3+zrlG53NZADAN96/DaT2QqwBnS7fNaJtRM3jf7v?=
+ =?us-ascii?Q?2ggeS/WoQionRonoPt4aIKJUOgszXIwh0MJQO/GB5PnT2+Q9P7UhzloLKkx+?=
+ =?us-ascii?Q?v4/hJdB1UVccdLd70j3dQMNR3ppSheMpUNJcHGQ81D2aGreEExrdIO98aoMQ?=
+ =?us-ascii?Q?vZ5qfbXkwzL9fIdjnTQP9q1Hx61X7QPE95TsuksMDcsuXxRz9Fc28nfC0Wxz?=
+ =?us-ascii?Q?wqz3uWv34sTiQChl0kU4P0PD5wLGcZ10aAxrHs4SSkcWCTD0p/p4jumKcLiq?=
+ =?us-ascii?Q?hAl+65w9moqsd7iUfeIXTf3CDvYpYmiWOm97ii+kZSdIGRX2PG0sgbvu/o1W?=
+ =?us-ascii?Q?An2h0QPV+VDm37YdAv/c/9XKTxcXqsXubNOi778yJPZFCrsYzt6MEAjmsLDe?=
+ =?us-ascii?Q?uh1W66lQ8ujKgcl7uuz4MGjOksZ4WYeNld5bYzL6YL/qZwzlHijhUzQvOgCY?=
+ =?us-ascii?Q?G/hDgzxItjst8WrblIK0RlXEhuroTg0mT6UNqemCypAL/29PebkB5nnOVtd+?=
+ =?us-ascii?Q?+rC/Yu+2LfYIm+H3noJST5JkoYJjTMWGIt7nSalc9/gtHBdi+/Xxxct4XWus?=
+ =?us-ascii?Q?YGcPuJOmAIP/Gldk2FT6Zk2InfJbgn/SOVYJ3m0UCxSYmnTF7x8Emb15CEnj?=
+ =?us-ascii?Q?jvSpiu2lFrM68aJsuTZKVtnQTaY981oBCryIZC0q8w6oEeBRdyn8H0PxfgCQ?=
+ =?us-ascii?Q?0Wc2Qj1dG4hKnGvvBEHqFEMKcVfuJaUItiNkCnBGjYGc34w7h/l9pEsaY8Ow?=
+ =?us-ascii?Q?lyTK8gm2uy/afPiaTS8AonoyDxxe2jl9WH9y3MuK5zTGcMe+mQWDT9N4v1Hu?=
+ =?us-ascii?Q?prKu12/MRnc5lMzSQnpZziOKpY37OUGZNyKY1mJSGD38fk2jlTLwM3cRJVhC?=
+ =?us-ascii?Q?11xMZrmbwJW8zGO4CDZzayLfIq70XyS64d3JgVgZjcsH4z58Hx3Wb6Y89Ahq?=
+ =?us-ascii?Q?YvMxMmIL2GTU06bxK/shU2w3/lt3bU5cW7uBldE0pfswVnPmONKTtJoxYRhm?=
+ =?us-ascii?Q?eejxLmlPV9NayQVanb/UY2LtVaM474PDbstVUE8Xrni4Can9w3Yu7GRoxwvx?=
+ =?us-ascii?Q?fZHEGrCGibqp8CSPQuD45glzVmJ8QUGhlYceJHbCmMyx8EdsFdkTSTPAdzUw?=
+ =?us-ascii?Q?RPdSvSKqV4uJD7oJDDaA2aqgYU9t7Go5XcMFEDHXLAWIuODxC56xO1ya0Zpu?=
+ =?us-ascii?Q?pSZNvyD7UPWRhuJQkXZsGmU2rz2b0NlNTz//Gfxy8rOrOs1BwNHk+AgMqn4s?=
+ =?us-ascii?Q?jeJvH1M+P9eWifBtiVoTveQkvWWk7ze3nMlwfENj+9Ai+F6nS36ML4WIw18T?=
+ =?us-ascii?Q?nKoKbxbC34ymKaF2N0V+czAKamKNJP/4olGa7IbBoAaHZB9hZaEKigs/riME?=
+ =?us-ascii?Q?gkS+OOL+RSp/dGjBkhjQVZf7wj9iCDqO7+9JezXG5EDNcBBkcN45Xufzi9eg?=
+ =?us-ascii?Q?o2rlNzFsdbMNBSVdnf7bA/XHuXWe92/blYA/qyihR4iM48HdiD1NhvU+gHdE?=
+ =?us-ascii?Q?3ux59zz5aGUhygJaDEkzj6xzC3OAolNQ4SgrNFF5wP9ZngZBqaS/NrGJ12ah?=
+ =?us-ascii?Q?+0Il4EnbckR2IaUCmzZIcF8Jx/PfByHnEBFKIrSsDdZEnSWqObLW6bJPgcnn?=
+ =?us-ascii?Q?WcE/1g0831VPjTZnPcteGOEqbvZlgQK9le540ziwknZH1v2uaDU3Qs4jSqBa?=
+ =?us-ascii?Q?3FsE59mrqKw1oeSwUhDh2bgi9j6fsssqx2P4rdimz1iv4wc8NMaE+fo3HD9N?=
+ =?us-ascii?Q?HYxoUeJ9BfwXLmcZjU3ZKJwcm+YhsoozL8AFLILvVK5LuEYkLCnsjjsVgyHB?=
+ =?us-ascii?Q?CNSV+6ay2pnH6AvK87GpW8WB7XSr/11bkZT1vhbnHmzMT29gQ0WIn9GHujnW?=
+ =?us-ascii?Q?3L9kv5Y1tGDv7bF+JJQ=3D?=3
